@@ -4,7 +4,7 @@
 Summary:	Qt-based client-side and server-side SOAP component
 Name:		kdsoap
 Version:	2.0.0
-Release:	2
+Release:	3
 License:	LGPL v2.1, LGPL v3.0, GPL v2.0, GPL v3.0, commercial
 Group:		X11/Libraries
 Source0:	https://github.com/KDAB/KDSoap/releases/download/%{name}-%{version}/kdsoap-%{version}.tar.gz
@@ -87,4 +87,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/qt5/mkspecs/modules
 %{_libdir}/qt5/mkspecs/modules/qt_KDSoapClient.pri
 %{_libdir}/qt5/mkspecs/modules/qt_KDSoapServer.pri
+%dir %{_datadir}/mkspecs
+%dir %{_datadir}/mkspecs/features
 %{_datadir}/mkspecs/features/kdsoap.prf
